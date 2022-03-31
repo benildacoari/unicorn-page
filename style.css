@@ -1,10 +1,13 @@
 body{
     margin: 0px;
     padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
 }
-img{
-    width: 250px;
-    height: 250px;
+.imagenStyle{
+    width: 200px;
+    height: 200px;
+    margin: 0px;
+    padding: 0;
 }
 h1{
     text-align: center;
@@ -39,8 +42,7 @@ h1{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    /* width: 100%; */
-    /* flex-direction: row; */
+    gap: 35px;
 }
 
 header{
@@ -52,9 +54,15 @@ header{
 }
 
 .card{
+    display: inline-flex;
     margin: 5px;
-    padding: 5px;
-    border: 1px solid;
+    padding: 0px;
+    /* border: 1px solid; */
+    height: 200px;
+    box-shadow: 4px 4px 16px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    /* para eliminar el borde cuadrado*/
+    /* overflow: hidden; */
 }
 
 .parrafos{
@@ -63,4 +71,24 @@ header{
 
 #nombreUni{
     display: inline-flex;
+}
+
+#titulo{
+    background-color:rgb(0,214,242);
+}
+
+.detalleU{
+    margin: 0;
+    padding: 0px;
+    width: 200px;
+    /* height: 200px; */
+}
+
+.palabras{
+    padding: 2px;
+    margin: 10px;
+}
+
+.descripcion{
+    font-weight: bold;
 }
