@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel=StyleSheet href="style.css" type="text/css" media=screen>
+    <title>Proyecto - Unicornios</title>
+</head>
+
+<body>
+    <header>
+        <h1>Establo de Unicornios</h1>
+        <div id="contenedorMenu">
+            <div id="agregar">
+                <h2>Agregar Unicornio:</h2></br></br>
+                <form>
+                    <div class="formElement">
+                        <label>Nombre </label></br>
+                        <input id="nombre" type="text">
+                    </div>
+                    <div class="formElement">
+                        <label>Poder </label></br>
+                        <input id="poder" type="text">
+                    </div>
+                    <div class="formElement">
+                        <label>Foto </label></br>
+                        <input id="foto" type="text"></br>
+                    </div>
+                    <div class="formElement">
+                        <label>Edad </label> </br>
+                        <input id="edad" type="text"></br></br>
+                    </div>
+                    <button id="btn" type="button">Agregar</button>
+                </form>
+            </div>
+
+            <div id="actualizar">
+                <h2>Modificar Unicornio:</h2>
+                <div id="nombreUni">
+                    <p>Vas a modificar los datos de:   </p> <p id="nameUnicor"></p>
+                </div>
+                <form>
+                    <div class="formElement">
+                        <label>Nombre </label> </br>
+                        <input id="actualizarNombre" type="text"></br>
+                    </div>
+                    <div class="formElement">
+                        <label>Poder </label> </br>
+                        <input id="actualizarPoder" type="text"></br>
+                    </div>
+                    <div class="formElement">
+                        <label>Foto </label> </br>
+                        <input id="actualizarFoto" type="text"></br>
+                    </div>
+                    <div class="formElement">
+                        <label>Edad </label> </br>
+                        <input id="actualizarEdad" type="text"></br></br>
+                    </div>
+                    <button id="btnModificar" type="button">Modificar</button>
+                </form>
+            </div>
+        </div>
+
+        <h2 id="establo">Establo</h2>
+    </header>
+    <main>
+        
+        <div id="contenedorUnicornios"></div>
+    </main>
+
+
+</body>
+
+<script src="./main.js"></script>
+
+</html>
