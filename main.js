@@ -78,7 +78,6 @@ function obtenerUnUnicornio(id){
     function verResultados(result){
         nameUnicornio.innerHTML = result.name;
         idGlobalModificar = result._id;
-        
     }
 
     const urlBase = "https://unicorns-api.herokuapp.com/api/v1/unicorns/";
