@@ -9,9 +9,6 @@ body{
     margin: 0px;
     padding: 0;
 }
-h1{
-    text-align: center;
-}
 
 #contenedorMenu{
     display: flex;
@@ -24,16 +21,34 @@ h1{
     width: 100%;
     text-align: center;
     max-width: 400px;
-    background-color: rgb(136, 209, 185);
+    background-color: rgb(255, 255, 255);
     padding: 15px;
 }
 
-/* 
+
 #establo{
-    border-bottom: 1px solid rgb(216, 213, 213);
-} */
+    border-bottom: 2px solid rgb(216, 213, 213);
+    margin-bottom: 0;
+} 
 
 .formElement{
+    text-align: left;
+    padding: 7px;
+}
+
+label{
+    font-weight: bold;
+}
+
+input{
+    margin-top: 7px;
+    border-radius: 8px;
+    border: 2px solid rgb(199, 198, 198);
+    padding: 5px;
+    width: 300px;
+}
+
+h2{
     text-align: left;
 }
 
@@ -48,9 +63,10 @@ h1{
 header{
     margin: 0px;
     padding: 10px;
-    background-color: rgb(133, 133, 145);
+    background-color: rgb(255, 255, 255);
     position:sticky;
     top: 0px;
+    margin-bottom: 0;
 }
 
 .card{
@@ -70,7 +86,15 @@ header{
 }
 
 #nombreUni{
+    width: 400px;
     display: inline-flex;
+    text-align: left;
+    margin: 0px;
+}
+
+.texto2{
+    text-align: left;
+    margin: 0px;
 }
 
 #titulo{
@@ -79,7 +103,7 @@ header{
 
 .detalleU{
     margin: 0;
-    padding: 0px;
+    padding-left: 10px;
     width: 200px;
     /* height: 200px; */
 }
@@ -91,4 +115,27 @@ header{
 
 .descripcion{
     font-weight: bold;
+}
+
+.boton2{
+    width: 165px;
+    border-radius: 5px;
+    padding: 5px 20px;
+}
+
+#titulo{
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    padding: 20px;
+}
+
+#btn, #btnModificar{
+    width: 130px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: white;
+    /* border-color: rgb(0,214,242); */
+    border: none;
+    background-color: rgb(0,214,242);
 }

@@ -24,41 +24,9 @@ function verUnicornios(result){
         const {name, power, image, age, _id} = unicornio;
 
         const contenedor = document.createElement('div');
-        // const pName = document.createElement('p');
-        // const pPower = document.createElement('p');
-        // const imagen = document.createElement('img');
-        // const pEdad = document.createElement('p');
-        // const botonActualizar = document.createElement('button');
-        // const botonEliminar = document.createElement('button');
-
+        
         contenedor.classList.add('card');
-        // pName.classList.add('parrafos');
-        // pPower.classList.add('parrafos');
-        // pEdad.classList.add('parrafos');
-
-        // pName.innerHTML = name;
-        // pPower.innerHTML = power;
-        // imagen.src = image;
-        // pEdad.innerHTML = age;
-
-        // botonActualizar.innerHTML = "Modificar";
-        // botonActualizar.type = "button";
-        // botonActualizar.classList.add('btn-update');
-
-
-        // botonEliminar.innerHTML = "Eliminar";
-        // botonEliminar.type = "button";
-        // botonEliminar.classList.add('btn-delete');
-
-        // contenedor.appendChild(imagen);
-        // contenedor.appendChild(pName);
-        // contenedor.appendChild(pPower);
-        // contenedor.appendChild(pEdad);
-        // contenedor.appendChild(botonActualizar);
-        // contenedor.appendChild(botonEliminar);
-
-        /////////////////////////////////////////////////
-
+        
         const divImagen = `<div > 
         <img src=${image} class="imagenStyle"></img>
         </div>
@@ -73,27 +41,16 @@ function verUnicornios(result){
                 <span class="descripcion">Edad: </span><span>${age}</span>
             </div>
             <div class="palabras">
-                <button type="button" onclick="obtenerUnUnicornio('${_id}')">Actualizar</button>
+                <button class="boton2" type="button" onclick="obtenerUnUnicornio('${_id}')">Actualizar</button>
             </div>
             <div class="palabras">
-                <button type="button" onclick="eliminarUnicornio('${_id}')">Eliminar</button>
+                <button class="boton2" type="button" onclick="eliminarUnicornio('${_id}')">Eliminar</button>
             </div>
         </div>
         `
         contenedor.innerHTML = divImagen;
-        
-        /////////////////////////////////////////////////
-
+       
         contenedorUnicornios.appendChild(contenedor);
-
-        // botonActualizar.addEventListener("click", function(){
-        //     obtenerUnUnicornio(unicornio._id);
-        // })
-
-        // botonEliminar.addEventListener("click", function(){
-        //     if(confirm("¿Estas seguro de eliminar el unicornio?"))
-        //         eliminarUnicornio(unicornio._id);
-        // })
     })
 }
 
